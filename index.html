@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MonPorteFolio</title>
+</head>
+
+<body>
+    <nav>
+        <p><span class="nom">NOM</span> <span class="prenom">PRENOM</span></p>
+        <ul>
+            <li><a href="#acceuil">Acceuil</a></li>
+            <li><a href="#about">A propos</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="acceuil">
+
+        <div class="intro">
+            <p>Je suis <span class="prenom">PRENOM</span>, Technicien Supérieur en système d'information et réseaux. Je
+                suis un passioné du développement informatique.</p>
+            <button>Voir mes projets</button>
+        </div>
+        <img src="images1.jpg" alt="Illustration de devellopement informatique" width="500px" />
+
+    </div>
+    <div id="about">
+        <h2>A propos de moi</h2>
+        <div class="bloc">
+
+            <div>
+                <p>Je suis <span class="prenom">PRENOM</span> <span class="nom">NOM</span>, un Technicien Supérieur en
+                    système
+                    d'information et réseaux titulaire du BTS (Brevet de Technicien Supérieur) d'Etat en Informatique
+                    option
+                    SIR(Système d'Information et Réseaux). Je suis passionné par le développement informatique et j'aime
+                    créer
+                    des solutions innovantes pour résoudre des problèmes. Mon objectif est de continuer à apprendre et à
+                    évoluer
+                    dans le domaine de l'informatique tout en contribuant à des projets significatifs.</p>
+                <button>Télécharger mon CV</button>
+            </div>
+            <img src="profile.jpg" alt="Image de moi">
+        </div>
+
+    </div>
+    <div id="projects">
+        <h2>Mes Projets</h2>
+        <p>Voici quelques-uns de mes projets récents :</p>
+        <div class="proj">
+
+            <div class="project">
+                <img src="images1.jpg" alt="Image du projet 1">
+                <h3>Système embarqué / Programmation système</h3>
+                <p>Conception et devellopement d'un système embarqué pour piloter les feux tricolore All-In-One d'ORACLE LIGHT & COMPUTING</p>
+                <button id="project1">voir</button>
+            </div>
+            <div class="project">
+                <img src="images1.jpg" alt="Image du projet 2">
+                <h3>Administration réseau et système</h3>
+                <p>Installation de réseaux local et maintenance des ordinateurs a CGEF Afrique. Et deploiement de cloud de stockage a AGM Consulting.</p>
+                <button id="project2">voir</button>
+            </div>
+            <div class="project">
+                <img src="images1.jpg" alt="Image du projet 3">
+                <h3>Devellopement informatique</h3>
+                <p>Devellopemet de site vitrine statique. et devellopement du Backend de PrestaConnect.</p>
+                <button id="project3">voir</button>
+            </div>
+        </div>
+
+    </div>
+    <div id="skills">
+        <h2>Compétences</h2>
+        <ul>
+            <li>Développement Web</li>
+            <li>Gestion de bases de données</li>
+            <li>Réseaux informatiques</li>
+            <li>Sécurité informatique</li>
+        </ul>
+    </div>
+    <div id="contact">
+        <h2>Contactez-moi</h2>
+        <form>
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <br>
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+    <footer>
+        <p>Designed by ZOUMBARA Zoumité Aimé with HTML CSS JS</p>
+    </footer>
+</body>
+
+</html>

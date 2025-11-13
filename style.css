@@ -1,0 +1,410 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 0% 5%;
+    background-color: #fff;
+}
+
+nav {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 0;
+    justify-content: space-between;
+    display: flex;
+}
+
+nav p {
+    margin: 0;
+    padding: 0 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+#acceuil{
+    padding: 20px;
+    justify-content: space-between;
+    display: flex;
+}
+.intro {
+    font-size: 1.7em;
+    font-weight: bolder;
+    max-width: 600px;
+    margin-left: 20px;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.prenom{
+    color: #29CCC5;
+    font-weight: bold;
+}
+.proj{
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    border-radius: 10%;
+    height: 60px;
+    color: white;
+    background-color: #29CCC5;
+    font-size: large;
+    font-weight: bolder;
+    border: none;
+}
+button:hover{
+    background-color: #77fff8;
+    cursor: pointer;
+}
+
+#about{
+    background-color: #F4F3F8;
+    border: 1px solid #0c0b0b;
+    border-top: 0px;
+    border-radius: 10px;
+    
+}
+.bloc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+    flex-wrap: wrap;
+}
+.bloc > div {
+    flex: 1 1 300px;
+    min-width: 280px;
+}
+.bloc > div p {
+    color: #555;
+    margin-bottom: 16px;
+}
+.bloc > div button {
+    padding: 12px 24px;
+    background: linear-gradient(90deg, #29CCC5, #20b7b0);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: filter 0.2s ease, transform 0.2s ease;
+}
+.bloc > div button:hover {
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+}
+#about img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    margin-left: 20px;
+    border: 5px solid #29CCC5;
+}
+h2 {
+    color: #29CCC5;
+    text-align: center;
+    display: block;
+}
+
+.project {
+    padding: 5px;
+    border:2px #030303;
+    border-radius: 10px;
+    background-color: #ccc;
+    text-align: center;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* --- Cleaned contact form styles (suppression des règles inutiles / grid) --- */
+#contact {
+    padding: 40px 20px;
+}
+
+#contact form {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(2,6,23,0.06);
+    border: 1px solid rgba(41,204,197,0.08);
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Styles communs aux champs */
+#contact form label {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 6px;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #e6edef;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 0.95rem;
+    line-height: 1.3;
+    box-shadow: inset 0 1px 2px rgba(10,20,30,0.02);
+}
+
+/* Focus */
+#contact form input:focus,
+#contact form textarea:focus {
+    outline: none;
+    border-color: #29CCC5;
+    box-shadow: 0 8px 24px rgba(41,204,197,0.10);
+    transform: translateY(-1px);
+}
+
+/* hauteur du textarea */
+#contact form textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+/* Bouton */
+#contact form button[type="submit"] {
+    padding: 12px 22px;
+    background: linear-gradient(90deg, #29CCC5, #20b7b0);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 8px 22px rgba(41,204,197,0.16);
+    align-self: flex-end;
+    transition: transform 0.12s ease, filter 0.12s ease;
+}
+
+#contact form button[type="submit"]:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.03);
+}
+
+/* --- Section Projets : design moderne et responsive --- */
+#projects {
+    padding: 40px 20px;
+}
+
+#projects h2 {
+    margin-bottom: 10px;
+}
+
+#projects > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 1rem;
+}
+
+.proj {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project {
+    flex: 1 1 calc(33.333% - 14px);
+    min-width: 280px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.project:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(41, 204, 197, 0.15);
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project h3 {
+    padding: 16px 16px 8px;
+    color: #29CCC5;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.project p {
+    padding: 0 16px 16px;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.project button {
+    margin: 0 16px 16px;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #29CCC5, #20b7b0);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: filter 0.2s ease;
+}
+
+.project button:hover {
+    filter: brightness(1.1);
+}
+
+/* Responsive : 2 colonnes sur tablette, 1 sur mobile */
+@media (max-width: 900px) {
+    .project {
+        flex: 1 1 calc(50% - 10px);
+    }
+}
+
+@media (max-width: 680px) {
+    .project {
+        flex: 1 1 100%;
+    }
+}
+
+/* Responsive : empiler sur mobile */
+@media (max-width: 768px) {
+    .bloc {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bloc > div {
+        flex: 1 1 100%;
+    }
+
+    #about img {
+        margin-left: 0;
+        margin-top: 16px;
+    }
+}
+
+/* --- Section Compétences : design moderne --- */
+#skills {
+    padding: 40px 20px;
+}
+
+#skills h2 {
+    margin-bottom: 30px;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#skills ul li {
+    padding: 20px;
+    background: linear-gradient(135deg, #ffffff 0%, #f9fffe 100%);
+    border-left: 4px solid #29CCC5;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#skills ul li:hover {
+    transform: translateX(8px);
+    box-shadow: 0 8px 24px rgba(41, 204, 197, 0.12);
+}
+
+/* Responsive : 2 colonnes sur tablette, 1 sur mobile */
+@media (max-width: 900px) {
+    #skills ul {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 680px) {
+    #skills ul {
+        grid-template-columns: 1fr;
+    }
+}
