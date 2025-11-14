@@ -534,3 +534,15 @@ a.btn:hover { transform: translateY(-3px); filter: brightness(1.03); }
     .pf-modal__dialog { grid-template-columns: 1fr; }
     .pf-modal__body { order: 2; }
 }
+/* Responsive mobile */
+@media (max-width: 768px) {
+    #acceuil {
+            flex-direction: column; /* image en dessous du texte */
+                    text-align: center;
+                        }
+
+                            #acceuil img {
+                                    width: 80%;
+                                            margin: 0 auto;
+                                                }
+                                                }
