@@ -408,3 +408,129 @@ form button:hover {
         grid-template-columns: 1fr;
     }
 }
+
+/* reveal on scroll */
+.reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* nav active link */
+nav a.active {
+    color: #29CCC5;
+    font-weight: 700;
+}
+
+/* Style pour le bouton contenant l'ancre (intro -> Voir mes projets) */
+.intro button {
+    padding: 12px 20px;
+    background: linear-gradient(90deg, #29CCC5, #20b7b0);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: 0 8px 20px rgba(41,204,197,0.12);
+    transition: transform 0.12s ease, filter 0.12s ease;
+    line-height: 1; /* permet height correcte si on fixe la hauteur */
+}
+
+/* Rendre l'<a> pleine largeur/hauteur et hériter du style du bouton */
+.intro button > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+    padding: 6px 0; /* petit padding interne si besoin */
+}
+
+/* Effet au survol */
+.intro button:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.03);
+}
+
+/* Option recommandée (meilleure sémantique) : si tu changes le HTML en <a class="btn"> */
+a.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: linear-gradient(90deg, #29CCC5, #20b7b0);
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+a.btn:hover { transform: translateY(-3px); filter: brightness(1.03); }
+
+/* Modal project-detail */
+.pf-modal {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.6);
+    z-index: 9999;
+    padding: 20px;
+}
+.pf-modal__dialog {
+    background: #fff;
+    border-radius: 12px;
+    max-width: 1000px;
+    width: 100%;
+    max-height: 90vh;
+    overflow: auto;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 16px;
+    padding: 16px;
+}
+.pf-modal__close {
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    background: transparent;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #333;
+}
+.pf-modal__media {
+    display:flex;
+    align-items:center;
+    gap:8px;
+    justify-content:center;
+}
+.pf-media__wrap { width:100%; max-height:60vh; display:flex; align-items:center; justify-content:center; overflow:hidden; position:relative; }
+.pf-media__img { display:none; max-width:100%; max-height:60vh; object-fit:contain; border-radius:8px; }
+.pf-media__img.active { display:block; }
+
+.pf-prev, .pf-next {
+    background: rgba(0,0,0,0.05);
+    border: none;
+    font-size: 26px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.pf-modal__body { padding: 8px 6px; }
+.pf-modal__body h3 { margin-top: 0; color:#29CCC5; }
+.pf-modal__body p { color:#333; line-height:1.5; }
+
+.pf-thumbs { display:flex; gap:8px; margin-top:12px; overflow:auto; padding-bottom:6px; }
+.pf-thumb { border: none; background: transparent; padding: 0; cursor: pointer; border-radius:6px; }
+.pf-thumb img { height:64px; width:auto; display:block; border-radius:6px; object-fit:cover; opacity:0.8; }
+.pf-thumb.active img { outline: 3px solid #29CCC5; opacity:1; }
+
+/* responsive: stack on mobile */
+@media (max-width: 880px) {
+    .pf-modal__dialog { grid-template-columns: 1fr; }
+    .pf-modal__body { order: 2; }
+}
